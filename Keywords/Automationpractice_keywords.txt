@@ -1,0 +1,46 @@
+*** Settings ***
+Library    SeleniumLibrary
+#Library    String
+Variables    ../Objects/Women_section.py
+
+*** Variables ***
+${url}	http://automationpractice.com/index.php?id_category=3&controller=category#/
+${browser}	chrome
+
+*** Keywords ***
+Open Browser in Women Section And Maximize
+    Open Browser    ${url}    ${browser}  
+    Maximize Browser Window
+    Set Selenium Speed    0.05 seconds
+
+Capture Prtc And Close Browser
+    Capture Page Screenshot 
+    Close Browser
+
+Sorting Women Clothes
+    Select From List By Label    ${select_product}    Price: Lowest first
+    Click Element    ${checker_availability}
+    Wait Until Element Is Visible    ${loader_not_visible}
+
+#Compare prices     
+#    ${response}    Get Text    ${get_item_value}
+#    ${result}    Get Substring    ${response}    1
+#    Convert To Number    ${result}
+#    Should Not Be Empty    ${result}
+#    ${response2}    Get Text    ${get_item_value2}
+#    ${result1}    Get Substring    ${response2}    1
+#    Convert To Number    ${result1}
+#    Should Not Be Empty    ${result1}
+    
+Compare products
+    Mouse Up    ${mouse_up1}
+    Wait Until Element Is Visible   ${compare_product2}
+    Click Element    ${compare_product2}
+    Mouse Up    ${mouse_up2}
+    Wait Until Element Is Visible   ${compare_product3}
+    Click Element    ${compare_product3}  
+    Wait Until Element Is Visible   ${btn_compare_link}
+    Click Element    ${btn_compare_link}   
+
+    
+    

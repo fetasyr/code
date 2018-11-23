@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.3 on win32)" generated="20181121 20:46:14.879">
+<suite id="s1" name="Projekty" source="C:\Users\lulu\HSCH\Projekty">
+<suite id="s1-s1" name="Tests" source="C:\Users\lulu\HSCH\Projekty\Tests">
+<suite id="s1-s1-s1" name="Women" source="C:\Users\lulu\HSCH\Projekty\Tests\Women.robot">
+<test id="s1-s1-s1-t1" name="All Type of Sorting">
+<kw name="Open Browser in Women Section And Maximize" library="Automationpractice_keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20181121 20:46:16.644" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php?id_category=3&amp;controller=category#/'.</msg>
+<status status="PASS" starttime="20181121 20:46:16.644" endtime="20181121 20:46:23.042"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181121 20:46:23.044" endtime="20181121 20:46:24.278"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.05 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20181121 20:46:24.279" endtime="20181121 20:46:24.280"></status>
+</kw>
+<status status="PASS" starttime="20181121 20:46:16.642" endtime="20181121 20:46:24.281"></status>
+</kw>
+<kw name="${unw} IN [ @{value_selection_sorting} ]" type="for">
+<kw name="${unw} = Price: Lowest first" type="foritem">
+<kw name="All Type of Sorting in Women Clothes">
+<arguments>
+<arg>${unw}</arg>
+</arguments>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${select_product}</arg>
+<arg>${unw}</arg>
+</arguments>
+<msg timestamp="20181121 20:46:24.288" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Price: Lowest first.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181121 20:46:24.713" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181121 20:46:24.373" endtime="20181121 20:46:24.713"></status>
+</kw>
+<msg timestamp="20181121 20:46:24.781" level="FAIL">List with locator 'id=selectProductSort' not found.</msg>
+<status status="FAIL" starttime="20181121 20:46:24.287" endtime="20181121 20:46:24.782"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:24.283" endtime="20181121 20:46:24.782"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:24.283" endtime="20181121 20:46:24.783"></status>
+</kw>
+<kw name="${unw} = Price: Highest first" type="foritem">
+<kw name="All Type of Sorting in Women Clothes">
+<arguments>
+<arg>${unw}</arg>
+</arguments>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${select_product}</arg>
+<arg>${unw}</arg>
+</arguments>
+<msg timestamp="20181121 20:46:24.786" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Price: Highest first.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181121 20:46:25.208" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181121 20:46:24.847" endtime="20181121 20:46:25.208"></status>
+</kw>
+<msg timestamp="20181121 20:46:25.210" level="FAIL">List with locator 'id=selectProductSort' not found.</msg>
+<status status="FAIL" starttime="20181121 20:46:24.785" endtime="20181121 20:46:25.210"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:24.784" endtime="20181121 20:46:25.211"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:24.783" endtime="20181121 20:46:25.211"></status>
+</kw>
+<kw name="${unw} = Product Name: A to Z" type="foritem">
+<kw name="All Type of Sorting in Women Clothes">
+<arguments>
+<arg>${unw}</arg>
+</arguments>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${select_product}</arg>
+<arg>${unw}</arg>
+</arguments>
+<msg timestamp="20181121 20:46:25.214" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Product Name: A to Z.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181121 20:46:25.639" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181121 20:46:25.280" endtime="20181121 20:46:25.639"></status>
+</kw>
+<msg timestamp="20181121 20:46:25.641" level="FAIL">List with locator 'id=selectProductSort' not found.</msg>
+<status status="FAIL" starttime="20181121 20:46:25.213" endtime="20181121 20:46:25.642"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:25.212" endtime="20181121 20:46:25.642"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:25.212" endtime="20181121 20:46:25.643"></status>
+</kw>
+<kw name="${unw} = Product Name: Z to A" type="foritem">
+<kw name="All Type of Sorting in Women Clothes">
+<arguments>
+<arg>${unw}</arg>
+</arguments>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${select_product}</arg>
+<arg>${unw}</arg>
+</arguments>
+<msg timestamp="20181121 20:46:25.645" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Product Name: Z to A.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181121 20:46:26.051" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181121 20:46:25.708" endtime="20181121 20:46:26.051"></status>
+</kw>
+<msg timestamp="20181121 20:46:26.053" level="FAIL">List with locator 'id=selectProductSort' not found.</msg>
+<status status="FAIL" starttime="20181121 20:46:25.645" endtime="20181121 20:46:26.054"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:25.644" endtime="20181121 20:46:26.054"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:25.643" endtime="20181121 20:46:26.055"></status>
+</kw>
+<kw name="${unw} = In stock" type="foritem">
+<kw name="All Type of Sorting in Women Clothes">
+<arguments>
+<arg>${unw}</arg>
+</arguments>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${select_product}</arg>
+<arg>${unw}</arg>
+</arguments>
+<msg timestamp="20181121 20:46:26.057" level="INFO">Selecting options from selection list 'id=selectProductSort' by label In stock.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181121 20:46:26.451" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181121 20:46:26.120" endtime="20181121 20:46:26.452"></status>
+</kw>
+<msg timestamp="20181121 20:46:26.454" level="FAIL">List with locator 'id=selectProductSort' not found.</msg>
+<status status="FAIL" starttime="20181121 20:46:26.057" endtime="20181121 20:46:26.455"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:26.056" endtime="20181121 20:46:26.456"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:26.055" endtime="20181121 20:46:26.456"></status>
+</kw>
+<kw name="${unw} = Reference: Lowest first" type="foritem">
+<kw name="All Type of Sorting in Women Clothes">
+<arguments>
+<arg>${unw}</arg>
+</arguments>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${select_product}</arg>
+<arg>${unw}</arg>
+</arguments>
+<msg timestamp="20181121 20:46:26.458" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Reference: Lowest first.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181121 20:46:26.861" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181121 20:46:26.522" endtime="20181121 20:46:26.861"></status>
+</kw>
+<msg timestamp="20181121 20:46:26.863" level="FAIL">List with locator 'id=selectProductSort' not found.</msg>
+<status status="FAIL" starttime="20181121 20:46:26.458" endtime="20181121 20:46:26.863"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:26.457" endtime="20181121 20:46:26.864"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:26.456" endtime="20181121 20:46:26.864"></status>
+</kw>
+<kw name="${unw} = Reference: Highest first" type="foritem">
+<kw name="All Type of Sorting in Women Clothes">
+<arguments>
+<arg>${unw}</arg>
+</arguments>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${select_product}</arg>
+<arg>${unw}</arg>
+</arguments>
+<msg timestamp="20181121 20:46:26.867" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Reference: Highest first.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181121 20:46:27.273" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181121 20:46:26.932" endtime="20181121 20:46:27.274"></status>
+</kw>
+<msg timestamp="20181121 20:46:27.275" level="FAIL">List with locator 'id=selectProductSort' not found.</msg>
+<status status="FAIL" starttime="20181121 20:46:26.866" endtime="20181121 20:46:27.276"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:26.865" endtime="20181121 20:46:27.276"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:26.865" endtime="20181121 20:46:27.277"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:24.282" endtime="20181121 20:46:27.277"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:16.641" endtime="20181121 20:46:27.278" critical="yes">Several failures occurred:
+
+1) List with locator 'id=selectProductSort' not found.
+
+2) List with locator 'id=selectProductSort' not found.
+
+3) List with locator 'id=selectProductSort' not found.
+
+4) List with locator 'id=selectProductSort' not found.
+
+5) List with locator 'id=selectProductSort' not found.
+
+6) List with locator 'id=selectProductSort' not found.
+
+7) List with locator 'id=selectProductSort' not found.</status>
+</test>
+<test id="s1-s1-s1-t2" name="Comparing Pricing">
+<kw name="Open Browser in Women Section And Maximize" library="Automationpractice_keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20181121 20:46:27.283" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php?id_category=3&amp;controller=category#/'.</msg>
+<status status="PASS" starttime="20181121 20:46:27.283" endtime="20181121 20:46:31.183"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181121 20:46:36.450" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20181121 20:46:32.343" endtime="20181121 20:46:36.450"></status>
+</kw>
+<msg timestamp="20181121 20:46:36.451" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181121 20:46:36.476" level="FAIL">WebDriverException: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Browser window not found"}
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20181121 20:46:31.184" endtime="20181121 20:46:36.477"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:27.281" endtime="20181121 20:46:36.478"></status>
+</kw>
+<status status="FAIL" starttime="20181121 20:46:27.280" endtime="20181121 20:46:36.479" critical="yes">Setup failed:
+WebDriverException: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Browser window not found"}
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<status status="FAIL" starttime="20181121 20:46:15.394" endtime="20181121 20:46:36.482"></status>
+</suite>
+<status status="FAIL" starttime="20181121 20:46:15.390" endtime="20181121 20:46:36.489"></status>
+</suite>
+<status status="FAIL" starttime="20181121 20:46:15.328" endtime="20181121 20:46:36.492"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2">Critical Tests</stat>
+<stat pass="0" fail="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" id="s1" name="Projekty">Projekty</stat>
+<stat pass="0" fail="2" id="s1-s1" name="Tests">Projekty.Tests</stat>
+<stat pass="0" fail="2" id="s1-s1-s1" name="Women">Projekty.Tests.Women</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20181121 20:46:36.451" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+</errors>
+</robot>
